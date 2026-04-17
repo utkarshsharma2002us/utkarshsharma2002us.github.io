@@ -47,7 +47,7 @@
   <div class="hero-photo">
     <div class="photo-frame">
       <div class="photo-ring"></div>
-      <img class="photo-img" src="pic_effect-removebg-preview.png">
+      <img class="photo-img" src="My_pic.png">
       <div class="photo-glitch"></div>
       <div class="photo-tag">MCA '26</div>
     </div>
@@ -159,7 +159,7 @@
 
 <!-- PROJECTS -->
 <section id="projects">
-  <div class="section-label reveal">// 05 — Projects</div>
+  <div class="section-label reveal">// 03 — Projects</div>
   <div class="section-title reveal">What I've Built</div>
   <div class="projects-list">
 
@@ -240,7 +240,7 @@
     </div>
 
     <div class="project-card reveal">
-      <div class="project-num">03</div>
+      <div class="project-num">06</div>
       <div>
         <div class="project-title">Fun Chat Bot</div>
         <div class="project-tech">
@@ -345,6 +345,30 @@
   <div class="section-label reveal" style="position:relative;z-index:2">// 07 — Contact</div>
   <div class="section-title reveal" style="position:relative;z-index:2">Let's Connect</div>
   <p class="reveal" style="color:#dfcbcb;font-size:1.05rem;max-width:500px;margin:0 auto;position:relative;z-index:2;">Open to internships, full-time roles, and interesting projects in AI/ML, data science, and software development.</p>
+
+  <!-- CONTACT FORM-->
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <form class="contact-form" onsubmit="handleSubmit(event)">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="name" placeholder="Your name" required />
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" placeholder="your@email.com" required />
+  </div>
+
+  <div class="form-group">
+    <label>Message</label>
+    <textarea name="message" placeholder="Tell me about the opportunity…" required></textarea>
+  </div>
+    
+  <button type="submit" class="btn-primary">Send Message →</button>
+  <p id="form-msg" style="display:none;">✓ Message sent!</p>
+</form>
 
   <div class="contact-links reveal">
     <a href="mailto:uditsharma1508@gmail.com" class="contact-link">
