@@ -27,3 +27,28 @@
   document.querySelectorAll('.reveal').forEach((el, i) => {
     el.style.transitionDelay = (i % 6) * 0.07 + 's';
   });
+
+  // Initialize EmailJS
+  (function () {
+    emailjs.init("5HPdS76dNmHaB4cPV"); // your PUBLIC KEY
+  })();
+
+  // Handle form submit
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_da4e79z",      // Service ID
+      "template_zuu9fbd",     // Template ID
+      e.target
+    ).then(
+      function () {
+        document.getElementById("form-msg").style.display = "block";
+        e.target.reset();
+      },
+      function (error) {
+        alert("Failed to send message ❌");
+        console.error("EmailJS Error:", error);
+      }
+    );
+  }
