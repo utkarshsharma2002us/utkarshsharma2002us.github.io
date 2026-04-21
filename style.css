@@ -302,7 +302,7 @@
 
   .skill-cat-title {
     font-family: 'Space Mono', monospace;
-    font-size: 0.65rem; letter-spacing: 3px; color: var(--red);
+    font-size: 0.8rem; letter-spacing: 3px; color: var(--red);
     text-transform: uppercase; margin-bottom: 1.2rem;
   }
   .skill-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; }
@@ -433,7 +433,7 @@
     pointer-events: none;
   }
 
-  .contact-links { display: flex; justify-content: center; gap: 2rem; margin-top: 2.5rem; flex-wrap: wrap; }
+  .contact-links { display: flex; justify-content: center; gap: 2rem; margin-top: 2.5rem; flex-wrap: wrap; padding-bottom: 1.5rem; }
   .contact-link {
     display: flex; align-items: center; gap: 0.6rem;
     padding: 1rem 2rem; border: 1px solid var(--border);
